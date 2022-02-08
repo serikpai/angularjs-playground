@@ -1,0 +1,8 @@
+<div class="card m-2">
+    <div class="card-body">
+        <h5 class="card-title" ng-bind="$ctrl.item.title"></h5>
+        <p class="card-text" ng-bind="$ctrl.item.content"></p>
+
+        <small class="text-muted" ng-show="$ctrl.item.email">assignee: {{$ctrl.item.email}}</small>
+    </div>
+</div>

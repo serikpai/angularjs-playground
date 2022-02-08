@@ -1,0 +1,5 @@
+<div class="form-group">
+    <label for="{{$ctrl.id}}" ng-bind="$ctrl.label"></label>
+    <input class="form-control" name="{{$ctrl.id}}" id="{{$ctrl.id}}" ng-model="$ctrl.model" ng-class="$ctrl.inputClass"
+        ng-model-options="{ debounce: 250, allowInvalid:true }">
+</div>

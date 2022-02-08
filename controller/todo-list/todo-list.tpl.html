@@ -1,0 +1,33 @@
+<h1>{{greet}}</h1>
+
+<ng-form name="fooForm" class="card m-2 p-2">
+
+    <ul ng-messages="fooForm.field1.$error">
+        <li ng-message="required">required</li>
+        <li ng-message="isFormatCorrect">Email format is not correct</li>
+        <li ng-message="match1">FELD 1</li>
+        <li ng-message="match2">FELD 2</li>
+    </ul>
+
+
+    <input type="text" foo:one atest="{{value2}}" name="field1" ng-model="greet" class="form-control" />
+
+    <input type="text" foo:two btest="{{value1}}" name="field2" ng-model="value2" class="form-control" />
+
+    {{value1}}
+
+    <foo-input-text label="Title" ng-model="title" id="itemTitle" required>
+    </foo-input-text>
+
+    <foo-input-text label="Content" ng-model="content" id="itemContent">
+    </foo-input-text>
+
+    <foo-input-text foo-email label="Email" ng-model="email" id="itemEmail">
+    </foo-input-text>
+
+    <button type="submit" class="btn btn-primary" ng-click="createNewItem()"
+        ng-disabled="fooForm.$invalid">Submit</button>
+</ng-form>
+
+<foo-todo-card ng-repeat="(_, item) in items" item="item">
+</foo-todo-card>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="TodoApp">
+
+<head>
+    <title>Hello World</title>
+
+    <script src="//code.angularjs.org/1.8.2/angular.js"></script>
+    <script src="//code.angularjs.org/1.8.2/angular-route.js"></script>
+    <script src="//code.angularjs.org/1.8.2/angular-messages.js"></script>
+
+    <script src="./app.js"></script>
+
+    <script src="./directives/email.drct.js"></script>
+
+    <script src="./components/input-text/input-text.comp.js"></script>
+    <script src="./components/todo-card/todo-card.comp.js"></script>
+
+    <script src="./controller/todo-list/todo-list.ctrl.js"></script>
+
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/styles/global.css" />
+    <link rel="stylesheet" href="./assets/styles/angular.css" />
+</head>
+
+<body>
+    <ng-view></ng-view>
+</body>
+
+</html>
